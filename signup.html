@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firefox Watches</title>
+
+    <link
+      rel="icon"
+      href="https://cdn.pixabay.com/photo/2016/03/31/18/26/angry-1294363_960_720.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <img src="butterfly-flying.gif" class="bird" />
+      </div>
+      <div class="box">
+        <div class="image">
+          <div class="dot">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/03/31/18/26/angry-1294363_960_720.png"
+              class="img2"
+            />
+          </div>
+        </div>
+        <p class="p1">Firefox Watches</p>
+        <div id="error"></div>
+        <form id="form">
+          <div class="form-event">
+            <div class="text-field">
+              <span class="span"></span>
+              <input type="text" class="username" value="" id="name" required />
+              <label><i class="fa-solid fa-user name"></i> Full Name</label
+              ><br />
+              <p class="error"><span id="cal1" class="errorin"></span></p>
+            </div>
+            <div class="dd"></div>
+            <div class="text-field">
+              <span class="span"></span>
+              <input
+                type="email"
+                class="password"
+                value=""
+                id="email"
+                required
+              />
+              <label><i class="fa-solid fa-envelope name"></i> Email </label>
+              <p class="error"><span id="cal2" class="errorin"></span></p>
+            </div>
+            <div class="text-field">
+              <span class="span"></span>
+              <input
+                type="text"
+                class="password"
+                value=""
+                id="username"
+                name="unaame"
+                required
+              />
+              <label><i class="fa-solid fa-users name"></i> Username </label>
+              <p class="error"><span id="cal3" class="errorin"></span></p>
+            </div>
+            <div class="text-field">
+              <span class="span"></span>
+              <input
+                type="text"
+                class="password"
+                value=""
+                id="mobile"
+                required
+              />
+              <label><i class="fa-solid fa-mobile name"></i> Mobile No </label>
+              <p class="error"><span id="cal4"></span></p>
+            </div>
+            <div class="check">
+              <input type="radio" class="check1" required />
+              <label class="lab1"
+                ><i class="fa-solid fa-person"></i> Male
+              </label>
+              <input type="radio" class="check1" required />
+              <label class="lab1"
+                ><i class="fa-solid fa-person"></i> Female
+              </label>
+              <input type="radio" class="check1" required />
+              <label class="lab1"
+                ><i class="fa-solid fa-person"></i> Others
+              </label>
+            </div>
+            <div class="text-field">
+              <span class="span"></span>
+              <input
+                type="password"
+                class="password"
+                value=""
+                id="password"
+                required
+              />
+              <label><i class="fa-solid fa-key name"></i> Password </label>
+              <p class="error"><span id="cal5"></span></p>
+            </div>
+            <div class="text-field">
+              <span class="span"></span>
+              <input
+                type="password"
+                class="password"
+                value=""
+                id="confirm"
+                required
+              />
+              <label
+                ><i class="fa-solid fa-lock name"></i> Confirm Password
+              </label>
+              <p class="error"><span id="cal6"></span></p>
+            </div>
+            <div class="tick">
+              <input type="checkbox" class="tick1" required />
+              <label class="lab2">
+                I accept the
+                <a href="#" class="condition"> Terms and conditions</a> &
+                <a href="#" class="condition"> Privacy Policy</a></label
+              >
+            </div>
+            <div class="button1">
+              <button
+                type="submit"
+                class="create"
+                value="submit"
+                onclick="myform()"
+              >
+                Create
+              </button>
+              <button type="submit" class="reset" value="">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function myform() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
+        const mobile = document.getElementById("mobile").value;
+        const password = document.getElementById("password").value;
+        const password1 = document.getElementById("confirm").value;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var passwordformat=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+        // Mobile Number Validation start
+
+        if (isNaN(mobile)) {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal4").innerHTML = html+"Type numeric value only";
+        } else if (mobile == "") {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal4").innerHTML = html +
+            " Please Provide Mobile Number ";
+        } else if (mobile.length < 10) {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal4").innerHTML =html + "Number not valid ";
+        } else if (
+          JSON.stringify(mobile).charAt(0) != "9" &&
+          mobile.charAt(0) != "8" &&
+          mobile.charAt(1) != "0"
+        )
+         {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal4").innerHTML = html +" Only start with 8 & 9 Sequence";
+        }
+        // Mobile Number Validation end
+
+        // Full Name Validation start
+
+        if (name == "") {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal1").innerHTML =html  + "enter your name"
+        }
+        else if (name){
+          let dd=name.charAt(0).toUpperCase();
+          let ee="";
+          for(let j=1;j <name.length;j++){
+            if(j >0){
+              ee +=name[j];
+            }
+          }
+          document.getElementById("name").value= dd + ee;
+        }
+        // Full Name Validation end
+
+        // Username Validation start
+        if (username) {
+          let bb = username.charAt(0).toUpperCase();
+          let cc = "";
+          for (let i = 1; i < username.length; i++) {
+            if (i > 0) {
+              cc += username[i];
+            }
+          }
+          document.getElementById("username").value = bb + cc;
+        } 
+        else if (username == "") {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal3").innerHTML = html + "Provide username";
+        }
+        // Username Validation end
+
+        // Email Validation start
+        if(email == ""){
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal2").innerHTML=html + "Provide email account"
+        }
+        else if (email.match(mailformat)){
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal2").innerHTML=html+"wrong email format";
+        }
+        // Email Validation end
+      
+        //  Password Validation start
+        if(password == "") {
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal5").innerHTML=html +"Enter your password"
+        }
+        else if(password.match(passwordformat)){
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+           document.getElementById("cal5").innerHTML=html +"Correct format enter"
+        }
+
+        //  Password Validation end
+
+        // Confirm Password Validation start
+
+        if(password1 == ""){
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal6").innerHTML=html +"Enter confirm password"
+        }
+        else if (password1 !=password){
+          let html;
+          html=`<span><i class="fa-solid fa-triangle-exclamation fa-fade er"></i></span>`
+          document.getElementById("cal6").innerHTML=html + "Please confirm "
+        }
+
+        // Confirm Password Validation end
+  
+      }
+      let a = document.getElementsByClassName("reset");
+      let b = document.querySelectorAll("input");
+      a.addEventListener("click", () => {
+        b.forEach((input) => (input.value = ""));
+      });
+      
+    </script>
+  </body>
+</html>
