@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_960_720.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: contain;
+    background-size: cover;
+}
+form{
+    background: rgb(238, 102, 102);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2vw 4vw;
+    border-radius: 10px;
+    max-width: 500px;
+}
+form h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+form input , form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline:none;
+    background: wheat
+    font-size 16px;
+}
+form button{
+    padding: 15px;
+    background: red;
+    color: rgb(245, 235, 234);
+    font-size: 18px;
+    border: 0.01;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+.senddetail {
+    border: none;
+}
+.senddetail:hover {
+    background: orange; 
+}

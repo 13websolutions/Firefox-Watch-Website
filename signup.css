@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/06/26/49250/gradient-02.jpg");
+    background-size:cover;
+}
+
+.error{
+    position: absolute;
+    top:10px;
+    right:10px;
+
+    font-size:12px;
+    color: red;
+    text-align: center;
+    z-index:4;
+    
+}
+.er {
+    color: black;
+    margin-right: 8px;
+}
+
+.bird {
+    position: absolute;
+    width: 100px;
+    left: 80%;
+    animation: fly 35s infinite;
+    overflow: hidden;
+    z-index: 12;
+}
+@keyframes fly {
+    0% {
+        left: -10%;
+        top: 5px;
+    }
+    25% {
+        top:250px ;
+    }
+    50% {
+        top: 50px;
+    }
+    75% {
+        top:500px
+    }
+    100% {
+        top: -10px;
+        right: -20%;
+    }
+}
+.box {
+    width: 450px;
+    height: 580px;
+    background: rgb(190, 190, 247);
+    margin: auto;
+    margin-top: 48px;
+}
+.dot {
+    width: 80px;
+    height: 80px;
+    background: rgb(241, 241, 247);
+    border-radius: 50%;
+    margin-left: 185px;
+    top: 3px;
+    position: absolute;
+}
+.img2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    top: -19x;
+    position: absolute;
+    /* border-radius: 30%; */
+    margin-top: 11px;
+}
+.form-event {
+    width: 390px;
+    height: 420px;
+    background: #f3f7f6;
+    margin-top: 13px;
+    margin-left: 31px;
+    position: absolute
+}
+.p1 {
+    padding-top: 45px;
+    padding-left: 145px;
+    color: rgb(41, 31, 31);
+    font-size: 23px;
+}
+.text-field {
+    width: 90%;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 2px solid #574f4f;
+    margin-left: 12px;
+    margin-right: 32px;
+    position:relative;
+    z-index:2;
+}
+.username {
+    margin-bottom: 1px;
+}
+.text-field input {
+    padding: 0 6px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text-field label {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    transform: translateY(-40%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.text-field .span::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0%;
+    width: 10%;
+    height: 3px;
+    background: rgb(110, 110, 248);
+}
+.text-field input:focus ~ label ,
+.text-field input:valid ~ label {
+    top:-9px
+}
+.text-field input .username {
+    width: 50%;
+}
+.name {
+    /* display: relative; */
+    margin-left: 2px;
+    padding-right: 12px;
+}
+.check {
+    padding-top: 28px;
+    margin-left: 49px;
+    padding-bottom: 8px;
+}
+.lab1 {
+    padding:7px
+}
+.tick1 {
+    margin-top: 21px;
+    margin-left: 12px;
+    margin-right:6px ;
+}
+.lab2 {
+    font-size: 14px;
+    margin-left: -3px;
+    margin-top:-18px;
+}
+.condition {
+    color: #246BE0;
+}
+.button1 {
+    margin-left: 94px;
+    margin-top: 32px;
+}
+.create {
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: linear-gradient(135deg, rgb(13, 4, 178) 0%, rgb(13, 4, 178) 12.5%,rgb(17, 25, 182) 12.5%, rgb(17, 25, 182) 25%,rgb(20, 46, 185) 25%, rgb(20, 46, 185) 37.5%,rgb(24, 67, 189) 37.5%, rgb(24, 67, 189) 50%,rgb(28, 87, 192) 50%, rgb(28, 87, 192) 62.5%,rgb(32, 108, 196) 62.5%, rgb(32, 108, 196) 75%,rgb(35, 129, 199) 75%, rgb(35, 129, 199) 87.5%,rgb(39, 150, 203) 87.5%, rgb(39, 150, 203) 100%);;
+    color: white;
+}
+.create:hover {
+    background:black
+}
+.reset {
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: linear-gradient(164deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 50%,rgba(222, 222, 222, 0.08) 50%, rgba(222, 222, 222, 0.08) 100%),linear-gradient(73deg, rgba(182, 182, 182, 0.02) 0%, rgba(182, 182, 182, 0.02) 50%,rgba(216, 216, 216, 0.02) 50%, rgba(216, 216, 216, 0.02) 100%),linear-gradient(215deg, rgba(27, 27, 27, 0.09) 0%, rgba(27, 27, 27, 0.09) 50%,rgba(243, 243, 243, 0.09) 50%, rgba(243, 243, 243, 0.09) 100%),linear-gradient(236deg, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 50%,rgba(16, 16, 16, 0.05) 50%, rgba(16, 16, 16, 0.05) 100%),linear-gradient(256deg, rgba(170, 170, 170, 0.07) 0%, rgba(170, 170, 170, 0.07) 50%,rgba(209, 209, 209, 0.07) 50%, rgba(209, 209, 209, 0.07) 100%),linear-gradient(126deg, rgba(204, 204, 204, 0.1) 0%, rgba(204, 204, 204, 0.1) 50%,rgba(26, 26, 26, 0.1) 50%, rgba(26, 26, 26, 0.1) 100%),linear-gradient(61deg, rgba(250, 250, 250, 0.01) 0%, rgba(250, 250, 250, 0.01) 50%,rgba(13, 13, 13, 0.01) 50%, rgba(13, 13, 13, 0.01) 100%),linear-gradient(56deg, rgba(210, 210, 210, 0.05) 0%, rgba(210, 210, 210, 0.05) 50%,rgba(79, 79, 79, 0.05) 50%, rgba(79, 79, 79, 0.05) 100%),linear-gradient(226deg, rgba(62, 62, 62, 0.08) 0%, rgba(62, 62, 62, 0.08) 50%,rgba(73, 73, 73, 0.08) 50%, rgba(73, 73, 73, 0.08) 100%),linear-gradient(90deg, rgb(236, 2, 158),rgb(161, 2, 79));
+    color: white;
+    margin-left: 12px;
+}
+.reset:hover {
+    background: black;
+}

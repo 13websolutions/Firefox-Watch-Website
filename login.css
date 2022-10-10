@@ -1,0 +1,201 @@
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: 'quicksand' , sans-serif;
+    background: url("https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_960_720.jpg");
+    /* background-position: contain; */
+    background-size: cover;
+}
+.login-box {
+    width: 1000px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    margin-top: 80px;
+    margin-right:210px ;
+    
+}
+.login-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 1px;
+    column-gap: 10px;
+}
+             /*   Partition first  */
+.photoover {
+    position: relative;
+}
+.img1 {
+    width: 590px;
+    height: 500px;
+    background-size: cover;
+    background-position: contain;
+    opacity: 1;
+    position: relative;
+}
+        /*  Right login box  */
+.dot {
+    width: 80px;
+    height: 80px;
+    background: rgb(235, 235, 241);
+    border-radius: 50%;
+    margin-left: 147px;
+    top: 39px;
+    position: absolute;
+}
+.img2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    top: -19x;
+    position: absolute;
+    /* border-radius: 30%; */
+    margin-top: 11px;
+}
+.para1 {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 23px;
+}
+.form-event {
+    width: 350px;
+    height: 400px;
+    background: #f3f7f6;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: 19px;
+}
+.para2 {
+    padding-top: 15px;
+    padding-left: 24px;
+    color: rgb(90, 88, 88);
+    font-size: 19px;
+}
+.social-link {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.facebook-btn, .google-btn {
+    padding: 8px;
+}
+.space {
+    margin-right: 6px;
+}
+.facebook-btn {
+    background: #4267B2;
+    color: white;
+    border: none;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.google-btn {
+    background: #DB4437;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.para3 {
+    text-align: center;
+    margin-top: 19px;
+    color: rgb(90, 88, 88);
+    margin-left: 1px;
+}
+.hr1 {
+    width: 120px;
+    margin-left: 122px;
+    background: black;
+    height: 3px;
+    margin-top: 6px;
+}
+.text-field {
+    width: 90%;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-left: 12px;
+    margin-right: 32px;
+}
+.username {
+    margin-bottom: 1px;
+}
+.text-field input {
+    padding: 0 6px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text-field label {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    transform: translateY(-40%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.text-field .span::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0%;
+    width: 10%;
+    height: 3px;
+    background: rgb(108, 108, 223);
+}
+.text-field input:focus ~ label ,
+.text-field input:valid ~ label {
+    top:-9px
+}
+.text-field input .username {
+    width: 50%;
+}
+.check {
+    margin-top: 17px;
+    margin-left: 11px;
+}
+.forget {
+    margin-left: 72px;
+    text-decoration:underline;
+    color: #246BE0;
+}
+.forget:hover {
+    color: blue;
+}
+.account {
+    margin-top: 21px;
+}
+.enter {
+    padding:13px 38px;
+    margin-left: 49px;
+    background-image: linear-gradient(135deg, rgb(13, 4, 178) 0%, rgb(13, 4, 178) 12.5%,rgb(17, 25, 182) 12.5%, rgb(17, 25, 182) 25%,rgb(20, 46, 185) 25%, rgb(20, 46, 185) 37.5%,rgb(24, 67, 189) 37.5%, rgb(24, 67, 189) 50%,rgb(28, 87, 192) 50%, rgb(28, 87, 192) 62.5%,rgb(32, 108, 196) 62.5%, rgb(32, 108, 196) 75%,rgb(35, 129, 199) 75%, rgb(35, 129, 199) 87.5%,rgb(39, 150, 203) 87.5%, rgb(39, 150, 203) 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.new-account {
+    padding: 13px 38px;
+    margin-left: 12px;
+    background: linear-gradient(164deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 50%,rgba(222, 222, 222, 0.08) 50%, rgba(222, 222, 222, 0.08) 100%),linear-gradient(73deg, rgba(182, 182, 182, 0.02) 0%, rgba(182, 182, 182, 0.02) 50%,rgba(216, 216, 216, 0.02) 50%, rgba(216, 216, 216, 0.02) 100%),linear-gradient(215deg, rgba(27, 27, 27, 0.09) 0%, rgba(27, 27, 27, 0.09) 50%,rgba(243, 243, 243, 0.09) 50%, rgba(243, 243, 243, 0.09) 100%),linear-gradient(236deg, rgba(242, 242, 242, 0.05) 0%, rgba(242, 242, 242, 0.05) 50%,rgba(16, 16, 16, 0.05) 50%, rgba(16, 16, 16, 0.05) 100%),linear-gradient(256deg, rgba(170, 170, 170, 0.07) 0%, rgba(170, 170, 170, 0.07) 50%,rgba(209, 209, 209, 0.07) 50%, rgba(209, 209, 209, 0.07) 100%),linear-gradient(126deg, rgba(204, 204, 204, 0.1) 0%, rgba(204, 204, 204, 0.1) 50%,rgba(26, 26, 26, 0.1) 50%, rgba(26, 26, 26, 0.1) 100%),linear-gradient(61deg, rgba(250, 250, 250, 0.01) 0%, rgba(250, 250, 250, 0.01) 50%,rgba(13, 13, 13, 0.01) 50%, rgba(13, 13, 13, 0.01) 100%),linear-gradient(56deg, rgba(210, 210, 210, 0.05) 0%, rgba(210, 210, 210, 0.05) 50%,rgba(79, 79, 79, 0.05) 50%, rgba(79, 79, 79, 0.05) 100%),linear-gradient(226deg, rgba(62, 62, 62, 0.08) 0%, rgba(62, 62, 62, 0.08) 50%,rgba(73, 73, 73, 0.08) 50%, rgba(73, 73, 73, 0.08) 100%),linear-gradient(90deg, rgb(236, 2, 158),rgb(161, 2, 79));
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.para4 {
+    margin-top: 19px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.condition {
+    color: #246BE0;
+}

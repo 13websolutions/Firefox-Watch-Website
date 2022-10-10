@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav {
+    display: block !important;
+  }
+  .gh {
+    display: block !important;
+  }
+  .mapstyle {
+    width: 473px !important;
+    height: 290px;
+  }
+  .container1 {
+    display: block !important;
+  }
+  .footer {
+    display: block !important;
+  }
+  .counter-up .content {
+    display: block !important;
+  }
+  .mapstyle {
+    width: 100% !important;
+    height: auto;
+  }
+  .hr1 {
+    margin: 29px 50% !important;
+  }
+  .aboutsocial {
+    margin-bottom: 32px;
+    margin-left: 50% !important;
+    position: absolute;
+  }
+  .timeperoid1 {
+    padding-top: 42px;
+    margin-left: 0px !important;
+    color: white;
+  }
+  .end {
+    height: auto !important;
+  }
+  .horizontal-line {
+    display: none;
+    margin-top: 55px;
+    margin-left: 72px;
+    height: 220px;
+    border-left: 1px solid rgb(235, 242, 235);
+  }
+  .button-subscribe {
+    width: 50px !important;
+    margin-top: 15px;
+    margin-left: 10px !important;
+    padding: 7px;
+    border-radius: 22px;
+    border: none;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgb(57, 100, 98);
+    transition: all 0.8s ease;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  transition: background 1s;
+  background: rgb(16, 16, 29);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  margin-right: 15px;
+}
+nav .logo img {
+  width: 90px;
+  margin-right: 10px;
+}
+nav ul li {
+  list-style: none;
+  margin: 1px 10px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+nav:hover {
+  background: rgb(22, 22, 19);
+}
+.cart {
+  color: white;
+  margin-left: 10px;
+}
+nav:hover .cart {
+  color: white;
+}
+nav:hover .logo {
+  color: black;
+}
+nav:hover ul li a {
+  color: white;
+}
+.gh {
+  display: flex;
+}
+.productmenu {
+  display: none;
+}
+nav ul li:hover .productmenu {
+  display: block;
+  position: absolute;
+  background: rgb(245, 236, 236);
+  margin-top: 11px;
+  margin-left: -15px;
+  padding-top: 10px;
+  margin-bottom: 2px;
+}
+nav ul li:hover .productmenu ul {
+  display: block;
+  margin: 6px;
+}
+nav ul li:hover .productmenu ul li {
+  width: 98px;
+  padding: 7px;
+  border-bottom: 1px dotted black;
+  border-radius: 0px;
+  text-align: left;
+}
+.hover-2:hover .productmenu ul li a {
+  color: black;
+}
+.sub-menu {
+  display: none;
+  float: right;
+}
+.hover-3:hover .sub-menu {
+  position: absolute;
+  display: block;
+  background: rgb(245, 236, 236);
+  margin-top: -20px;
+  margin-left: 95px;
+  text-align: center;
+}
+.hover-3:hover .sub-menu ul li a {
+  color: black;
+}
+/*  Content Start */
+.container {
+  width: 100%;
+  height: 550px;
+  background: yellow;
+  background-image: url("https://images.hdqwalls.com/download/blur-background-6z-1920x1080.jpg");
+}
+.heading1 {
+  padding-top: 28px;
+  margin-left: 57px;
+  font-size: 39px;
+  color: white;
+  margin-bottom: 20px;
+}
+.content .floating-image {
+  max-width: 390px;
+  max-height: 190px;
+  margin-right: 22px;
+  margin-left: 12px;
+}
+.content .floating-image.right {
+  float: right;
+}
+.heading2 {
+  padding-top: 12px;
+  font-size: 22px;
+  padding-left: 52px;
+  color: black;
+}
+.para1 {
+  margin-top: 12px;
+  color: white;
+  margin-left: 62px;
+}
+.hr1 {
+  width: 25%;
+  margin: 29px 517px;
+}
+.aboutsocial {
+  margin-bottom: 32px;
+  margin-left: 560px;
+  position: absolute;
+}
+.space {
+  color: white;
+  padding-right: 1px;
+  padding-left: 10px;
+  font-size: 19px;
+  /* padding-right:px; */
+}
+.space1 {
+  color: white;
+  font-size: 19px;
+  padding-left: 48px;
+}
+.space2 {
+  color: white;
+  font-size: 19px;
+  padding-left: 48px;
+}
+.space3 {
+  color: white;
+  font-size: 19px;
+  padding-left: 48px;
+}
+/*   Animation counter */
+.counter-up {
+  background: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png")
+    no-repeat;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  background-size: cover;
+}
+.counter-up .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .box {
+  width: calc(35% -30px);
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  flex-direction: column;
+}
+.content .box .icon {
+  font-size: 45px;
+  color: rgb(39, 33, 33);
+}
+.content .box .counter {
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+}
+.content .box .text {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+}
+/*  Footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 1px;
+  column-gap: 10px;
+  background-color: rgb(71, 69, 69);
+}
+.footer-left {
+  padding: 40px 0px 30px 90px;
+}
+.footer-center2 {
+  padding: 20px 9px 0px 140px;
+}
+.footer-left .img1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 92px;
+}
+.footer-heading1 {
+  margin-top: 10px;
+  font-size: 22px;
+  margin-left: 52px;
+  color: white;
+  font-weight: 2px;
+}
+.footer-left .footer-p1 {
+  padding-top: 12px;
+  color: white;
+}
+.socials {
+  display: block;
+}
+.socials .footer-heading2 {
+  margin-top: 9px;
+  color: white;
+  font-size: 22px;
+}
+.socials .a {
+  color: white;
+  text-decoration: none;
+}
+.p {
+  margin-top: 4px;
+}
+.p .color {
+  color: white;
+  margin: 6px;
+}
+/*  Middle footer */
+.footer-center1 {
+  margin-top: 16px;
+  display: block;
+  /* margin-right: 32px; */
+  padding-right: 32px;
+  padding-left: 159px;
+}
+.footer-heading3 {
+  margin-top: 100px;
+  color: white;
+  margin-right: 32px;
+}
+.color1 {
+  color: white;
+  margin-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+}
+.p1 {
+  color: white;
+}
+/*  last footer */
+.footer-center2 {
+  display: block;
+  margin-top: 5px;
+  padding-left: 200px;
+}
+.items2 {
+  display: block;
+  margin-left: 13px;
+}
+.footer-heading4 {
+  margin-top: 90px;
+  color: white;
+  font-size: 21px;
+}
+.a1 {
+  color: white;
+  text-decoration: none;
+}
+.p2 {
+  padding-bottom: 9px;
+  margin-top: 7px;
+}
+/*   End  */
+.end {
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(71, 69, 69);
+  padding-top: 1px;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 1px;
+  column-gap: 1px;
+  background-color: rgb(71, 69, 69);
+}
+.map {
+  margin-top: 22px;
+  margin-left: 22px;
+}
+.mapstyle {
+  width: 750px;
+  height: 290px;
+}
+/*   Horizontal Line */
+.horizontal-line {
+  margin-top: 55px;
+  margin-left: 72px;
+  height: 220px;
+  border-left: 1px solid rgb(235, 242, 235);
+}
+.subscribe-page {
+  margin-left: -172px;
+  padding-right: 2px;
+  padding-top: 63px;
+}
+.footer-heading5 {
+  color: white;
+  font-size: 33px;
+  background: url("https://thumbs.dreamstime.com/b/abstract-white-gray-gradient-color-modern-background-design-vector-illustration-geometrical-design-white-abstract-background-146748280.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 16px;
+}
+.input {
+  width: 300px;
+  padding: 12px;
+  margin-top: 6px;
+  margin-left: 32px;
+  border: none;
+  background-color: antiquewhite;
+  outline: none;
+}
+::placeholder {
+  color: black;
+  text-align: center;
+}
+.button-subscribe {
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 101px;
+  padding: 7px;
+  border-radius: 22px;
+  border: none;
+  background-color: aqua;
+  box-shadow: 2px 2px 2px 1px rgb(57, 100, 98);
+  transition: all 0.8s ease;
+}
+.button-subscribe:hover {
+  background: burlywood;
+}
+.join {
+  font-size: 20px;
+  color: white;
+  padding-top: 17px;
+}
+.arrow {
+  color: white;
+  margin-right: 10px;
+  font-size: 22px;
+}
+.timeperoid1 {
+  padding-top: 42px;
+  margin-left: 430px;
+  color: white;
+}

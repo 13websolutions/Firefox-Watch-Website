@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title> Firefox Watches</title>
+     <link rel="icon" href="https://cdn.pixabay.com/photo/2016/03/31/18/26/angry-1294363_960_720.png" type="image/png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <link rel="stylesheet" href="hover.css">
+  </head>
+  <body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="https://cdn.pixabay.com/photo/2016/03/31/18/26/angry-1294363_960_720.png" alt="">
+                <span style="color: white;">  Firefox
+                    <br>
+                    <a style="padding-left: 15px; font-size: 15px;"> <bold>Watches</bold></a>
+                </span>
+         </div>
+          <ul class="gh">
+                 <li><a href="/Home/index.html"> Home </a></li>
+                 <li class="hover-2"><a href="#"> Products </a>
+                    <div class="productmenu">
+                        <ul>
+                            <li class="hover-3"><a href="#">For Him</a>&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="/categoryforhim/him.html"><i class="fa-solid fa-clock fa-shake"></i>&nbsp; Watch</a></li>
+                                        <li><a href="#"><i class="fa-duotone fa-watch-calculator"></i> Shoes</a></li>
+                                     </ul>
+                                </div>
+                             </li>            
+                             <li><a href="/categoryforher/her.html">For Her</a>&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></li>
+                             <li><a href="kid.html">For Kid</a>&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li><a href="/Aboutus/about.html"> About US </a></li>
+                 <li><a href="/Contact/contact.html"> Contact </a></li>
+                 <li><a href="/Login/login.html"> Login </a></li>
+                    <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+             </ul>
+        </nav>
+    </div>
+    <div id="popupmain">
+        <div id="popup">
+            <div id="contentbox">
+                <button type="button" onclick="myclose()" id="close" style="z-index: 12;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div id="contentbox1">
+                    <div>
+                        <h1 class="returnpolicyhead"> Return Policy</h1>
+                        <hr class="line">
+                        <p class="conditions"> 1) Discounted items are final and cannot be returned or exchanged.<br>
+                            2) Returned items must have tags still on and be returned in original packaging.<br>
+                            3) Returned items must have no visible signs of wear or use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div> 
+  <div id="fullbox">
+    <div class="main-wrapper">
+         <div class="container">
+             <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+                        <img src="Images/mainhover.png" alt="watch image">
+                    </div>
+                    <div class="hover-container">
+                        <div>
+                            <img src="Images/hover1.png" height="100">
+                        </div>
+                        <div>
+                            <img src="Images/hover2.png" height="100">
+                        </div>
+                        <div>
+                            <img src="Images/hover3.png" height="100">
+                        </div>
+                        <div>
+                            <img src="Images/mainhover.png" height="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <h1 class="heading1">Rizzly</h1>
+                    <p class="para1">
+                        Gents Exclusive 3 Designer Combo (Casual+PartyWear+Formal) Designer Stylish New For Boys And Mens Analog Watch - For Boys
+                    </p>
+                    <p class="special"> Special Price </p>
+                    <p class="product-price"><i class="fa-solid fa-indian-rupee-sign"></i> 3000 </p>
+                    <p class="product-cut">&#x20b9 4000</p><span class="off"> 25% off</span>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                    </div>
+                    <h2 class="heading2"> Available offers</h2>
+                    <div class="offers">
+                        <p><i class="fa-solid fa-tag color"></i><b> &nbsp Special Price</b>  Get extra 20% off (price inclusive of discount)</p>
+                        <p><i class="fa-solid fa-tag color"></i><b> &nbsp Combo Offer </b>Buy 2 items save 5%; Buy 3 or more save 10%</p>
+                        <p><i class="fa-solid fa-tag color"></i> <b>&nbsp Bank Offer</b> 5% Cashback on Flipkart Axis Bank Card</p>
+                        <p><i class="fa-solid fa-tag color"></i><b> &nbsp Partner Offer</b> Sign Flipkart Pay Later & get Flipkart Gift Card worth ₹150*</p>
+                    </div>
+                    <div class="pincode-input">
+                        <input type="text" placeholder="Enter a Pincode" name="pincode" class="pincode">
+                        <button class="pincode-checker"> Check </button>
+                    </div>
+                    <div class="response">
+                        <div class="message"></div>
+                    </div>
+                    <div class="services">
+                        <p> Warranty  &nbsp - &nbsp 6 Months </p>
+                        <div class="policy">
+                            <p><i class="fa-solid fa-rotate-left font"></i> 10 Days return Policy <button type="button" class="policybutton" onclick="policy()" id="lock" ><i class="fa-solid fa-circle-question"></i></button></p>
+                            <p><i class="fa-solid fa-indian-rupee-sign font"></i>&nbsp Cash on Delivery available</p>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp; ADD TO CART</button>
+                            <button type="button" class="buy-now-btn"><i class="fa-solid fa-thumbs-up"></i>&nbsp; BUY NOW</button>
+                            <div id="drag">
+                                <i class="fa-solid fa-scissors scrrenshot"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+       </div>
+       <div class="product-information">
+          <hr>
+          <h3 class="heading3"> Product Information </h3>
+          <div class="product-div2">
+             <div class="product-div2-left">
+                  <h4 class="heading4"> Technical Details </h4>
+                  <hr class="line2">
+                  <div class="data1">
+                     <table class="table border">
+                         <tbody>
+                             <tr>
+                                 <th class="box">Band colour</th>
+                                 <td class="box"> Black </td>
+                             </tr>
+                             <tr>
+                                 <th>Band Material</th>
+                                 <td>Stainless Steel</td>
+                             </tr>
+                             <tr>
+                                <th>Band Width</th>
+                                <td>24.25 Millimeters</td>
+                             </tr>
+                             <tr>
+                                <th>Bezel Function</th>
+                                <td>No bezel available</td>
+                             </tr>
+                             <tr>
+                                <th>Bezel Material</th>
+                                <td>No bezel available</td>
+                             </tr>
+                             <tr>
+                                <th>Brand</th>
+                                <td>Rizzly</td>
+                             </tr>
+                             <tr>
+                                <th>Calendar Type</th>
+                                <td>No Calendar</td>
+                             </tr>
+                             <tr>
+                                <th>Case Diameter</th>
+                                <td>48.5 Millimeters</td>
+                             </tr>
+                             <tr>
+                                <th>Case Material</th>
+                                <td>Leather</td>
+                             </tr>
+                             <tr>
+                                <th>Case Thickness</th>
+                                <td>13 Millimeters</td>
+                             </tr>
+                             <tr>
+                                <th>Clasp</th>
+                                <td>Deployment Clasp</td>
+                             </tr>
+                             <tr>
+                                <th>Case Shape</th>
+                                <td>Round</td>
+                             </tr>
+                             <tr>
+                                <th>Display Type</th>
+                                <td>Analog</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                  </div>
+             </div>
+             <div class="product-div2-right">
+                 <h3 id="heading3"> Addition Details </h3>
+                 <hr class="line3">
+                 <div class="data2">
+                     <table class="table2">
+                         <tbody>
+                             <tr>
+                                 <th class="bo1">ASIN</th>
+                                 <td class="bo2"> B08J8R76J8  </td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Customer Reviews</th>
+                                 <td class="bo2">500+</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1"> Best Sellers Rank</th>
+                                 <td class="bo2">#2,946 in Home & Kitchen (See Top 100 in Home & Kitchen)
+                                    #4 in Air Conditioners
+                                    #94 in Large Appliances</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Date First Available</th>
+                                 <td class="bo2">11 February 2021</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Manufacturer</th>
+                                 <td class="bo2">Amber Enterprises India Limited, Amber Enterprises India Limited,A1/1A,Industrial Area selaqui, Dehradun-248197</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Packer</th>
+                                 <td class="bo2">Amber Enterprises India Limited,A1/1A,Industrial Area selaqui, Dehradun-248197</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Item Weight</th>
+                                 <td class="bo2">400gm</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Item Dimensions LxWxH</th>
+                                 <td class="bo2">1 x 2 x 2 Centimeters</td>
+                             </tr>
+                             <tr>
+                                 <th class="bo1">Net Quantity</th>
+                                 <td class="bo2">1 count</td>
+                             </tr>
+                         </tbody> 
+                     </table>
+                 </div>
+             </div>
+          </div>
+       </div>
+       <div class="inside-box">
+          <hr class="line4">
+          <h1 class="box-message"> What is in the box? </h1>
+          <p class="box-inside"><i class="fa-solid fa-box-archive jk"></i>&nbsp 3 Watch Unit, 1 AAA cell, User manual, Warranty Card & Coupons</p>
+          <hr class="line5">
+       </div>
+       <div class="counter-up">
+         <div class="content">
+             <div class="box">
+                 <div class="icon"><i class="fa-solid fa-box-open"></i></div>
+                 <div class="counter">9 </div>
+                 <div class="text"> No of Products </div>
+             </div>
+             <div class="box">
+                 <div class="icon"><i class="fa-solid fa-user"></i></div>
+                 <div class="counter">30 </div>
+                 <div class="text"> Client Order per month</div>
+             </div>
+             <div class="box">
+                 <div class="icon"><i class="fa-brands fa-angellist"></i></div>
+                 <div class="counter">20 </div>
+                 <div class="text"> Client Review </div>
+             </div>
+             <div class="box">
+                 <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                 <div class="counter">3</div>
+                 <div class="text"> Delivery Partners </div>
+             </div>
+         </div>
+     </div>
+     <div class="testominals">
+         <div class="inner">
+             <p class="testominalsheading"> Testomials </p>
+             <div class="innerunder"></div>
+             <div class="row">
+                 <div class="col">
+                     <div class="testominal">
+                          <img class="testominalimage" src="https://cdn.pixabay.com/photo/2018/02/16/14/38/portrait-3157821_960_720.jpg">
+                          <div class="name"> Albert</div>
+                          <div class="rating1">
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                          </div>
+                          <p class="para1testominal"> A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China.
+                             Tigers and leopards are animals that live in China's forests in the north. 
+                             In the jungles, monkeys swing in the trees and elephants walk through the brush.
+                          </p>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="testominal">
+                         <img class="testominalimage" src="https://cdn.pixabay.com/photo/2018/02/16/14/38/portrait-3157821_960_720.jpg">
+                         <div class="name"> Albert</div>
+                         <div class="rating1">
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star"></i></span>
+                          </div>
+                          <p class="para1testominal"> A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China.
+                              Tigers and leopards are animals that live in China's forests in the north. 
+                             In the jungles, monkeys swing in the trees and elephants walk through the brush.
+                           </p>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="testominal">
+                         <img class="testominalimage" src="https://www.themarysue.com/wp-content/uploads/2018/11/GettyImages-923001456-e1541528649438.jpg">
+                         <div class="name"> Albert</div>
+                         <div class="rating1">
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star"></i></span>
+                             <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                             <span><i class="fa-regular fa-star"></i></span>
+                             <span><i class="fa-regular fa-star"></i></span>
+                          </div>
+                          <p class="para1testominal"> A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China.
+                             Tigers and leopards are animals that live in China's forests in the north. 
+                             In the jungles, monkeys swing in the trees and elephants walk through the brush.
+                          </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+   </div>       
+     </div>
+       <footer class="footer">
+        <div class="footer-left">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/18/26/angry-1294363_960_720.png" alt="coompany logo" class="img1">
+                 <h1 class="footer-heading1">Firefox Watches</h1> 
+                 <p class="footer-p1">
+                    Feel the Most powerful machine in your hand <br>
+                    Real Monster is with you. 
+                 </p>
+                <div class="socials">
+                    <h1 class="footer-heading2">Connect with us</h1>
+                    <p class="p"><i class="fa-brands fa-instagram-square color"></i> <a href="#" class="a">Facebook</a></p>
+                    <p class="p"><i class="fa-brands fa-youtube color"></i> <a href="#" class="a">Youtube</a></p>
+                    <p class="p"><i class="fa-brands fa-twitter color"></i> <a href="#" class="a">Twitter</a></p>
+                    <p class="p"><i class="fa-brands fa-instagram-square color"></i> <a href="#" class="a">Instagram</a></p>
+                 </div>
+        </div>
+        <div class="footer-center1">
+            <div class="items1">
+                <h2 class="footer-heading3"> Address </h2>
+                <p class="p1"><i class="fa-solid fa-phone color1"></i> Phone </p>
+                <p class="p1"><i class="fa-solid fa-inbox color1"></i> your@firefoxwatch.com</p>
+                <p class="p1"><i class="fa-solid fa-building color1"></i>#345, New Road Sec-19 Dadar Distt Maharashtra</p>
+            </div>
+        </div>
+        <div class="footer-center2">
+            <div class="items2">
+                <h3 class="footer-heading4"> Policy </h3>
+                <p class="p2"><a href="#" class="a1"> Return policy</a></p>
+                <p class="p2"><a href="#" class="a1"> Terms of Use</a></p>
+                <p class="p2"><a href="#" class="a1"> Security</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="end">
+         <div class="container1">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1658645427257!5m2!1sen!2sin" class="mapstyle"></iframe>
+             </div>
+             <div class="horizontal-line">
+                <div class="horizontal"></div>
+             </div>
+             <div class="subscribe-page">
+                  <h4 class="footer-heading5"> Subscribe to our Newsletter </h4>
+                 <div class="box">
+                     <input type="text" class="input" placeholder="Enter your mail"><br>
+                     <button type="button" class="button-subscribe"> Subscribe </button>
+                      <p class="join"> 
+                       <i class="fa-solid fa-arrow-pointer arrow"></i>Join us for better deals, upcoming products, Coupons and many other benefits
+                      </p>
+                 </div>
+             </div>     
+        </div> 
+        <div class="time-period">
+            <p class="timeperoid1"> Copyright <i class="fa-solid fa-copyright copyright"></i> 2016-2022 firefoxwatch.com India, Inc. All rights reserved.  </p>
+        </div> 
+    </div> 
+    </div>
+       <script src="pincode.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 1px;
+    column-gap: 10px;
+    background-color: rgb(71, 69, 69);
+}
+.footer-left{
+    padding: 40px 0px 30px 90px ;
+}
+.footer-center2{
+    padding: 20px 9px 0px 140px;
+}
+.footer-left .img1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 92px;
+}
+.footer-heading1 {
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 52px;
+    color: white;
+    font-weight: 2px;
+}
+.footer-left .footer-p1 {
+    padding-top: 12px;
+    color: white;
+}
+.socials {
+    display: block;
+}
+.socials .footer-heading2 {
+    margin-top: 9px;
+    color: white;
+    font-size: 22px;
+}
+.socials .a {
+    color: white;
+    text-decoration: none;
+}
+.p {
+    margin-top:4px
+}
+.p .color {
+    color: white;
+    margin: 6px;
+}
+                           /*  Middle footer */
+.footer-center1 {
+  margin-top: 16px;
+  display: block;
+    /* margin-right: 32px; */
+  padding-right: 32px;
+  padding-left: 159px;
+}
+.footer-heading3 {
+    margin-top: 100px;
+    color: white;
+    margin-right: 32px;
+}
+.color1 {
+    color: white;
+    margin-top: 9px;
+    padding-right: 8px;
+    padding-bottom: 9px;
+}
+.p1 {
+    color: white;
+}
+                           /*  last footer */
+.footer-center2 {
+    display: block;
+    margin-top: 5px;
+    padding-left:200px
+}
+.items2 {
+    display: block;
+    margin-left: 13px;
+}
+.footer-heading4 {
+    margin-top: 90px;
+    color: white;
+    font-size: 21px;
+}
+.a1 {
+    color: white;
+    text-decoration: none;
+}
+.p2  {
+    padding-bottom:9px;
+    margin-top: 7px;
+}
+                       /*   End  */
+.end {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(71, 69, 69);
+    padding-top: 1px;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 1px;
+    column-gap: 1px;
+    background-color: rgb(71, 69, 69);
+}
+.map {
+    margin-top: 22px;
+    margin-left: 22px;
+}
+.mapstyle {
+    width: 750px;
+    height: 290px;
+}
+                            /*   Horizontal Line */
+.horizontal-line  {
+    margin-top: 55px;
+    margin-left: 72px;
+    height: 220px;
+    border-left: 1px solid rgb(235, 242, 235);
+}
+.subscribe-page {
+    margin-left: -172px;
+    padding-right: 2px;
+    padding-top: 63px;
+}
+.footer-heading5 {
+    color: white;
+    font-size: 33px;
+    background: url("https://thumbs.dreamstime.com/b/abstract-white-gray-gradient-color-modern-background-design-vector-illustration-geometrical-design-white-abstract-background-146748280.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+}
+.input {
+    width: 300px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-left: 32px;
+    border: none;
+    background-color: antiquewhite;
+    outline: none;
+}
+::placeholder{
+    color: black;
+    text-align: center;
+}
+.button-subscribe {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 101px;
+    padding: 7px;
+    border-radius: 22px;
+    border: none;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px  rgb(57, 100, 98);
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.button-subscribe:hover{
+    background: burlywood;
+}
+.join {
+    font-size: 20px;
+    color: white;
+    padding-top: 17px;
+}
+.arrow {
+    color: white;
+    margin-right: 10px;
+    font-size: 22px;
+}
+.timeperoid1 {
+    padding-top: 42px;
+    margin-left: 430px;
+    color: white;
+}
